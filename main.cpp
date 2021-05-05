@@ -127,7 +127,6 @@ int stud_slide_window_back_n_frame(char *pBuffer, int bufferSize, UINT8 messageT
 * 选择性重传测试函数
 */
 int stud_slide_window_choice_frame_resend(char *pBuffer, int bufferSize, UINT8 messageType)
-
 {
     static queue<frame> waitList;
     static deque<frame> slidingWindow;
